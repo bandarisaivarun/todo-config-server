@@ -9,7 +9,7 @@ spring:
         corsConfigurations:
           '[/**]':
             allowedOrigins: "*"
-            allowCredentials: true
+            allowCredentials: false
             allowedHeaders: "*"
             allowedMethods:
               - GET
