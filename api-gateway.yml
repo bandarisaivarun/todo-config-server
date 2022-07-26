@@ -7,7 +7,6 @@ spring:
       globalcors:
         corsConfigurations:
           '[/**]':
-            allowedOrigins: "*"
             allowedHeaders:
               - content-type
             allowedMethods:
@@ -17,3 +16,4 @@ spring:
 #   main:
 #     web-application-type: reactive
 #     allow-bean-definition-overriding: true
+#allowedOrigins: "*"
