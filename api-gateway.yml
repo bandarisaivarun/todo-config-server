@@ -4,6 +4,8 @@ server:
 spring:
   cloud:
     gateway:
+      default-filter:
+        -DedupeResponseHeader: Access-Control-Allow-Origin
       globalcors:
         corsConfigurations:
           '[/**]':
