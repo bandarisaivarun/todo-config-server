@@ -1,22 +1,19 @@
 server:
   port: 8881
-# spring:
-#   cloud:
-#     gateway:
-#       default-filters:
-#         - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
-#       globalcors:
-#         corsConfigurations:
-#           '[/**]':
-#             allowedOrigins: "*"
-#             allowCredentials: false
-#             allowedHeaders: "*"
-#             allowedMethods:
-#               - GET
-#               - POST
-#               - PUT
-#               - DELETE
+
 spring:
-  main:
-    web-application-type: reactive
-    allow-bean-definition-overriding: true
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "http://localhost:4200"
+            allowedHeaders:
+              - content-type
+            allowedMethods:
+              - GET
+              - POST
+# spring:
+#   main:
+#     web-application-type: reactive
+#     allow-bean-definition-overriding: true
