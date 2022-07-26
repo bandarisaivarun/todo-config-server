@@ -16,3 +16,6 @@ server:
 #               - POST
 #               - PUT
 #               - DELETE
+spring:
+  main:
+    web-application-type: reactive
