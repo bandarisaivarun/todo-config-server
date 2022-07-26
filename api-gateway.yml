@@ -1,18 +1,18 @@
 server:
   port: 8881
 
-spring:
-  cloud:
-    gateway:
-#       default-filter:
-#         -DedupeResponseHeader: Access-Control-Allow-Origin
-      globalcors:
-        corsConfigurations:
-          '[/**]':
-            allowedOrigin: "http://localhost:4201"
-            allowedMethods:
-              - GET
-              - POST
+# spring:
+#   cloud:
+#     gateway:
+# #       default-filter:
+# #         -DedupeResponseHeader: Access-Control-Allow-Origin
+#       globalcors:
+#         corsConfigurations:
+#           '[/**]':
+#             allowedOrigin: "http://localhost:4201"
+#             allowedMethods:
+#               - GET
+#               - POST
 # spring:
 #   main:
 #     web-application-type: reactive
