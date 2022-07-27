@@ -1,16 +1,16 @@
 server:
   port: 8881
-spring:
-  cloud:
-    gateway:
-      globalcors:
-        corsConfigurations:
-          '[/**]':
-            allowedOrigins: "*"
-            allowedHeaders: "*"
-            allowedMethods:
-            - GET
-            - POST
+# spring:
+#   cloud:
+#     gateway:
+#       globalcors:
+#         corsConfigurations:
+#           '[/**]':
+#             allowedOrigins: "*"
+#             allowedHeaders: "*"
+#             allowedMethods:
+#             - GET
+#             - POST
   main:
     web-application-type: reactive
 # spring:
