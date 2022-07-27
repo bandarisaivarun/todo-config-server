@@ -11,6 +11,8 @@ spring:
             allowedMethods:
             - GET
             - POST
+  main:
+    web-application-type: reactive
 # spring:
 #   cloud:
 #     gateway:
